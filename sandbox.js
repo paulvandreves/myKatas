@@ -105,3 +105,57 @@ function perfectCity(departure, destination) {
   route = route.toString();
   return route; 
 }
+// Implementing Object.create 
+
+Object.create = function(prototype, properties) {
+  //Your code goes here
+  //And remember: you need not to reinvent Object.defineProperties on your own!
+  
+  
+
+};
+
+// Example from fun fun function for Reference 
+const cat = {
+    init: function(sound){
+        this.sound = sound
+    }, 
+    makeSound: function(){
+        console.log(this.sound);
+    }
+}
+
+const mark = Object.create(cat)
+mark.init('mewuufff')
+mark.makeSound() 
+
+const veteran = {
+    sleep: function(sleep){
+        this.sleep = sleep; 
+    },
+    panic: function(panic){
+        this.panic = panic; 
+    }
+}
+
+// 
+
+// How can we add the correct amount of spaces to the output every time thlrough the loop 
+
+// How many spaces are needed on each side of of the output 
+
+// for every row we need a space before the row and a space after the row 
+function christmasTree(height) {
+ let tree = ['*']; 
+ let row = "\n***"; 
+ for(let i =1; i < height; i ++){
+   tree.push(row); 
+   tree[i] = tree[i] + " ";
+   //row = row + "**"; 
+   tree.unshift(" "); 
+   
+ }
+ tree = tree.toString(); 
+ tree = tree.replace(/,/g , "");
+ return tree; 
+}
