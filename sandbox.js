@@ -1,3 +1,5 @@
+console.log("The Node debugger is working!!"); 
+// wrap ererythin that you dont want called into a function 
 function solution(roman){
     roman = roman.split(''); 
     for(var i = 0; i < roman.length; i ++){
@@ -32,36 +34,22 @@ function solution(roman){
     }
     return roman.reduce((a, b) => a + b, 0);
 }
-  
+
+
+
+//   for(var i = 0; i < roman.length; i++){
+//     for(let prop in object){}
+//       if(roman [i] === prop){
+//         console.log("found a Match!"); 
+//         arabicNum += prop.val;
+//       }
+//     }
+// return arabicNum; 
 
   
-   
-  
-  
 
 
 
-
-
-
-
-
-
-
-
-  for(var i = 0; i < roman.length; i++){
-    for(let prop in object){}
-      if(roman [i] === prop){
-        console.log("found a Match!"); 
-        arabicNum += prop.val;
-      }
-    }
-return arabicNum; 
-}
-  
-
-
-solution('IIV');
 
 function solve(arr){
   for(var i = 0; i < arr.length; i ++){
@@ -125,18 +113,18 @@ const cat = {
     }
 }
 
-const mark = Object.create(cat)
-mark.init('mewuufff')
-mark.makeSound() 
+// const mark = Object.create(cat)
+// mark.init('mewuufff')
+// mark.makeSound() 
 
-const veteran = {
-    sleep: function(sleep){
-        this.sleep = sleep; 
-    },
-    panic: function(panic){
-        this.panic = panic; 
-    }
-}
+// const veteran = {
+//     sleep: function(sleep){
+//         this.sleep = sleep; 
+//     },
+//     panic: function(panic){
+//         this.panic = panic; 
+//     }
+// }
 
 // 
 
@@ -158,4 +146,18 @@ function christmasTree(height) {
  tree = tree.toString(); 
  tree = tree.replace(/,/g , "");
  return tree; 
+}
+
+function sumTheTreeValues(root){
+  let treeSum = 0; 
+  inorder(root); 
+  function inorder(node){
+   if(node){
+      inorder(node.left);
+      treeSum = treeSum + node.value; 
+      inorder(node.right);
+   }
+  }
+  
+  return treeSum; 
 }
