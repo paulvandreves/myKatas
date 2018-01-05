@@ -135,14 +135,31 @@ const cat = {
 // for every row we need a space before the row and a space after the row 
 function christmasTree(height) {
  let tree = ['*']; 
- let row = "\n***"; 
- for(let i =1; i < height; i ++){
-   tree.push(row); 
-   tree[i] = tree[i] + " ";
-   //row = row + "**"; 
+ let row = "***";
+ let newLine = "\n"; 
+ let bottom = height; 
+ bottom --; 
+ for(let i = 1; i < height; i ++){
+   console.log(tree)
+   tree.push(" ");
    tree.unshift(" "); 
-   
+   if(i < bottom){
+     tree.push(" "); 
+   }
+   tree.push(newLine); 
+   if(i < bottom){
+     tree.push(" "); 
+   }
+   tree.push(row);  
+   row = row + "**"; 
  }
+ tree = tree.toString(); 
+ tree = tree.replace(/,/g , "");
+ tree = tree.trimRight(); 
+ console.log(tree); 
+ return tree; 
+}
+
  tree = tree.toString(); 
  tree = tree.replace(/,/g , "");
  return tree; 
