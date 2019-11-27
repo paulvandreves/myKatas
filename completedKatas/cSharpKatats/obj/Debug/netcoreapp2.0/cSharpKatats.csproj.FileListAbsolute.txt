@@ -1,0 +1,10 @@
+/Users/paulvandyke/codeWars/completedKatas/cSharpKatats/obj/Debug/netcoreapp2.0/cSharpKatats.csproj.CoreCompileInputs.cache
+/Users/paulvandyke/codeWars/completedKatas/cSharpKatats/obj/Debug/netcoreapp2.0/cSharpKatats.AssemblyInfoInputs.cache
+/Users/paulvandyke/codeWars/completedKatas/cSharpKatats/obj/Debug/netcoreapp2.0/cSharpKatats.AssemblyInfo.cs
+/Users/paulvandyke/codeWars/completedKatas/cSharpKatats/bin/Debug/netcoreapp2.0/cSharpKatats.deps.json
+/Users/paulvandyke/codeWars/completedKatas/cSharpKatats/bin/Debug/netcoreapp2.0/cSharpKatats.runtimeconfig.json
+/Users/paulvandyke/codeWars/completedKatas/cSharpKatats/bin/Debug/netcoreapp2.0/cSharpKatats.runtimeconfig.dev.json
+/Users/paulvandyke/codeWars/completedKatas/cSharpKatats/bin/Debug/netcoreapp2.0/cSharpKatats.dll
+/Users/paulvandyke/codeWars/completedKatas/cSharpKatats/bin/Debug/netcoreapp2.0/cSharpKatats.pdb
+/Users/paulvandyke/codeWars/completedKatas/cSharpKatats/obj/Debug/netcoreapp2.0/cSharpKatats.dll
+/Users/paulvandyke/codeWars/completedKatas/cSharpKatats/obj/Debug/netcoreapp2.0/cSharpKatats.pdb
